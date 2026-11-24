@@ -3,53 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ERICASTHRO — Boutique officielle de mode africaine. Vêtements, sacs et accessoires.">
-<meta name="theme-color" content="#080808">
+<meta name="description" content="ERICASTHRO — Boutique panafricaine. Commandes depuis les 54 pays d’Afrique.">
 <title>ERICASTHRO — Boutique officielle</title>
 <style>
-:root{--bg:#080808;--panel:#111;--white:#fff;--muted:#aaa;--line:#292929;--silver:#c9c9c9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}
-.top{background:#eee;color:#111;text-align:center;padding:9px 12px;font-size:10px;letter-spacing:1.5px}
-header{height:74px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(8,8,8,.96);z-index:5;backdrop-filter:blur(12px)}
-.brand{font-size:22px;font-weight:900;letter-spacing:3px}.brand span{color:#999}
-nav{display:flex;gap:25px;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#ccc}
-.cartbtn,.outline{border:1px solid #666;padding:11px 15px;background:transparent;color:white;cursor:pointer;font-size:11px;letter-spacing:1px}
-.hero{min-height:510px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:65px 8vw;gap:5vw;background:radial-gradient(ellipse at 75% 50%,#242424 0,#080808 62%)}
-.eyebrow{font-size:10px;letter-spacing:3.5px;color:#aaa;text-transform:uppercase}
-h1{font-size:clamp(48px,7vw,88px);line-height:.94;letter-spacing:-4px;margin:20px 0;font-weight:900}h1 em{font-style:normal;color:#999}
-.hero p{color:#bbb;line-height:1.8;max-width:440px;font-size:14px}
-.cta{display:inline-block;background:#fff;color:#080808;padding:16px 24px;margin-top:18px;font-weight:900;font-size:10px;letter-spacing:2px;text-transform:uppercase}
-.heroimg{width:100%;height:390px;object-fit:contain;filter:drop-shadow(0 20px 45px #000)}
-.section{padding:72px 8vw}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin-bottom:28px}
-h2{font-size:clamp(27px,4vw,36px);letter-spacing:-1px;margin:8px 0}.sub{color:#999;font-size:13px;line-height:1.7}
-.filters{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0}.filter{background:transparent;color:#bbb;border:1px solid #444;padding:10px 15px;font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer}.filter.active,.filter:hover{background:#fff;color:#080808;border-color:#fff}
-.search{max-width:330px;background:#111;color:white;border:1px solid #444;padding:12px;width:100%;outline:none}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
-.card{border:1px solid #292929;background:#0d0d0d;min-width:0}.visual{height:300px;background:linear-gradient(145deg,#171717,#080808);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.visual img{width:100%;height:100%;object-fit:contain;padding:15px}.fallback{position:absolute;color:#777;font-size:12px;letter-spacing:3px;text-align:center;padding:20px}
-.cardbody{padding:17px}.tag{font-size:9px;letter-spacing:2px;color:#999;text-transform:uppercase}.card h3{font-size:17px;margin:9px 0}.price{font-size:15px;font-weight:bold;margin:10px 0 15px}.card button{width:100%;padding:13px;background:#fff;color:#080808;border:0;font-size:10px;font-weight:900;letter-spacing:1.5px;cursor:pointer}.card button:disabled{background:#333;color:#aaa;cursor:default}
-.product-note{font-size:11px;color:#888;line-height:1.6;margin-top:10px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.feature{border-top:1px solid #444;padding:18px 0}.feature b{font-size:11px;letter-spacing:1px}.feature p{font-size:12px;color:#999;line-height:1.6}
-.contact{border-top:1px solid #292929}.contact a{color:#fff;text-decoration:underline}
-footer{border-top:1px solid #282828;padding:30px 8vw;color:#888;font-size:10px;letter-spacing:1px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.modal{display:none;position:fixed;inset:0;background:#000c;z-index:10;align-items:center;justify-content:center;padding:14px}.modal.open{display:flex}.panel{background:#101010;border:1px solid #555;width:min(590px,100%);max-height:94vh;overflow:auto;padding:24px}
-.panelhead{display:flex;justify-content:space-between;align-items:center;gap:12px}.panelhead h2{font-size:24px}.close{background:none;color:#fff;border:0;font-size:27px;cursor:pointer}
-.cartline{border-bottom:1px solid #333;padding:12px 0;font-size:13px;line-height:1.6}.cartline button{float:right;background:none;color:#aaa;border:0;text-decoration:underline;cursor:pointer;font-size:11px}
-label{display:block;font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:#bbb;margin-top:13px}
-input,select{width:100%;background:#111;color:white;border:1px solid #444;padding:13px;margin:7px 0 5px;outline:none}
-.paychoices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:9px 0 16px}.paychoices label{border:1px solid #555;padding:12px 5px;text-align:center;cursor:pointer;font-size:9px;letter-spacing:.4px;margin:0}.paychoices input{width:auto;margin:0 4px 0 0;padding:0}
-.total{display:flex;justify-content:space-between;padding:15px 0;border-top:1px solid #444;font-weight:bold}.notice{font-size:11px;color:#ccc;background:#1d1d1d;padding:12px;line-height:1.6;margin:13px 0}
-.submit{width:100%;background:#fff;color:#000;border:0;padding:16px;font-weight:900;letter-spacing:1.5px;cursor:pointer}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visual{height:260px}}
-@media(max-width:650px){nav{display:none}.hero{grid-template-columns:1fr;padding:48px 7vw;gap:12px}.heroimg{height:260px;grid-row:1}.section{padding:52px 6vw}.grid{gap:10px}.visual{height:190px}.cardbody{padding:12px}.card h3{font-size:14px}.features{grid-template-columns:1fr}.sectionhead{display:block}.search{max-width:none}.brand{font-size:18px}.panel{padding:17px}.paychoices{grid-template-columns:1fr}}
-@media(max-width:390px){.grid{grid-template-columns:1fr}.visual{height:260px}}
+:root{--black:#090909;--white:#fff;--muted:#aaa;--line:#242424;--accent:#d9d9d9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080808;color:#fff;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+.top{background:#f3f3f3;color:#111;text-align:center;padding:9px 12px;font-size:11px;letter-spacing:1.6px}
+header{height:76px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(8,8,8,.95);z-index:5;backdrop-filter:blur(10px)}
+.brand{font-size:23px;font-weight:900;letter-spacing:3px}.brand span{color:#aaa}
+nav{display:flex;gap:28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#ccc}
+.cartbtn{border:1px solid #555;padding:11px 15px;background:transparent;color:white;cursor:pointer;font-size:12px;letter-spacing:1px}
+.hero{min-height:560px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding:65px 8vw;gap:5vw;background:radial-gradient(ellipse at 70% 50%,#202020 0,#080808 60%)}
+.eyebrow{font-size:11px;letter-spacing:4px;color:#aaa;text-transform:uppercase}
+h1{font-size:clamp(48px,7vw,92px);line-height:.92;letter-spacing:-4px;margin:20px 0;font-weight:900}
+h1 em{font-style:normal;color:#999}
+.hero p{color:#bdbdbd;line-height:1.8;max-width:420px;font-size:15px}
+.cta{display:inline-block;background:white;color:#080808;padding:16px 25px;margin-top:20px;font-weight:800;font-size:11px;letter-spacing:2px;text-transform:uppercase;border:0;cursor:pointer}
+.heroimg{width:100%;max-height:520px;object-fit:contain;filter:drop-shadow(0 20px 45px #000)}
+.section{padding:75px 8vw}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin-bottom:30px}
+h2{font-size:34px;letter-spacing:-1px;margin:8px 0}.sub{color:#999;font-size:13px;line-height:1.6}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;border:1px solid #242424;padding:24px}
+.product img{width:100%;background:#000;object-fit:contain;max-height:590px}
+.productinfo h3{font-size:31px;margin:12px 0}.price{font-size:22px;font-weight:bold;margin:20px 0}.muted{color:#999;font-size:13px;line-height:1.7}
+select,input{width:100%;background:#111;color:white;border:1px solid #444;padding:14px;margin:8px 0 16px;outline:none}
+label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#bbb}
+.add{width:100%;background:#fff;color:#000;border:0;padding:17px;font-weight:900;letter-spacing:2px;cursor:pointer}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}
+.feature{border-top:1px solid #444;padding:20px 0}.feature b{font-size:12px;letter-spacing:1px}.feature p{font-size:12px;color:#999;line-height:1.6}
+footer{border-top:1px solid #282828;padding:35px 8vw;color:#888;font-size:11px;letter-spacing:1px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.modal{display:none;position:fixed;inset:0;background:#000c;z-index:10;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}.panel{background:#101010;border:1px solid #555;width:min(560px,100%);max-height:92vh;overflow:auto;padding:28px}
+.panelhead{display:flex;justify-content:space-between;align-items:center}.close{background:none;color:#fff;border:0;font-size:26px;cursor:pointer}
+.paychoices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 20px}
+.paychoices label{border:1px solid #555;padding:13px 6px;text-align:center;cursor:pointer;font-size:10px;letter-spacing:.5px}
+.paychoices input{width:auto;margin:0 5px 0 0}
+.notice{font-size:12px;color:#c7c7c7;background:#1d1d1d;padding:13px;line-height:1.6;margin:14px 0}
+.total{display:flex;justify-content:space-between;padding:15px 0;border-top:1px solid #444;font-weight:bold}
+@media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding:55px 7vw;gap:20px}.heroimg{max-height:360px;grid-row:1}.product{grid-template-columns:1fr;padding:14px}.product img{max-height:420px}.section{padding:55px 6vw}.features{grid-template-columns:1fr}.sectionhead{display:block}.brand{font-size:18px}}
 </style>
 </head>
 <body>
-<div class="top">ERICASTHRO — LE STYLE, L’IDENTITÉ, L’AFRIQUE</div>
+<div class="top">BOUTIQUE PANAFRICAINE — COMMANDES DEPUIS LES 54 PAYS D’AFRIQUE</div>
 <header>
-  <a class="brand" href="#accueil">ERICA<span>STHRO</span></a>
-  <nav><a href="#accueil">Accueil</a><a href="#collection">Collection</a><a href="#marque">La marque</a><a href="#contact">Contact</a></nav>
+  <a class="brand" href="#">ERICA<span>STHRO</span></a>
+  <nav><a href="#accueil">Accueil</a><a href="#collection">Collection</a><a href="#contact">Contact</a></nav>
   <button class="cartbtn" onclick="openCart()">PANIER (<span id="count">0</span>)</button>
 </header>
 <main>
@@ -57,52 +55,108 @@ input,select{width:100%;background:#111;color:white;border:1px solid #444;paddin
   <div>
     <div class="eyebrow">La signature du style</div>
     <h1>PORTE TON<br><em>IDENTITÉ.</em></h1>
-    <p>Découvre ERICASTHRO, une marque de mode inspirée par l’énergie et l’ambition de l’Afrique. Des essentiels pour affirmer ton style, où que tu sois.</p>
-    <a class="cta" href="#collection">Explorer la collection</a>
+    <p>Découvre l’univers ERICASTHRO : une marque ouverte à toute l’Afrique. Commande depuis ton pays et confirme les modalités de livraison avec notre équipe.</p>
+    <a class="cta" href="#collection">Découvrir le pull</a>
   </div>
-  <img class="heroimg" src="pull-ericasthro-blanc.png" alt="Hoodie signature blanc ERICASTHRO" onerror="this.style.visibility='hidden'">
+  <img class="heroimg" src="pull-ericasthro-blanc.png" alt="Pull à capuche blanc ERICASTHRO avec logo noir">
 </section>
-
 <section class="section" id="collection">
-  <div class="sectionhead"><div><div class="eyebrow">ERICASTHRO / Collections</div><h2>La collection officielle.</h2><div class="sub">Vêtements, sacs et accessoires pour elle et lui.</div></div></div>
-  <div class="filters" id="filters">
-    <button class="filter active" data-cat="Tous">Tout voir</button>
-    <button class="filter" data-cat="Homme">Homme</button>
-    <button class="filter" data-cat="Femme">Femme</button>
-    <button class="filter" data-cat="Accessoires">Accessoires</button>
-  </div>
-  <input class="search" id="search" type="search" placeholder="Rechercher un article..." aria-label="Rechercher un article">
-  <div class="grid" id="productGrid"></div>
-  <div class="features">
-    <div class="feature"><b>IDENTITÉ SIGNATURE</b><p>Une esthétique sobre et affirmée, reconnaissable ERICASTHRO.</p></div>
-    <div class="feature"><b>COMMANDE SIMPLE</b><p>Compose ton panier et transmets ta demande directement sur WhatsApp.</p></div>
-    <div class="feature"><b>LIVRAISON À CONFIRMER</b><p>Les frais et délais sont vérifiés avec notre équipe selon ta destination.</p></div>
+  <div class="sectionhead"><div><div class="eyebrow">Collection signature</div><h2>La pièce incontournable.</h2><div class="sub">Un design épuré. Une identité forte.</div></div></div>
+  <div class="product">
+    <img src="pull-ericasthro-blanc.png" alt="Pull à capuche ERICASTHRO blanc">
+    <div class="productinfo">
+      <div class="eyebrow">ERICASTHRO / ESSENTIALS</div>
+      <h3>Hoodie Signature Blanc</h3>
+      <div class="price" id="price">10 000 – 15 000 FCFA</div>
+      <p class="muted">Pull à capuche blanc avec logo ERICASTHRO noir. Coupe confortable et style minimaliste.</p>
+      <label for="priceChoice">Choisir le prix de ton modèle</label>
+      <select id="priceChoice"><option value="10000">10 000 FCFA</option><option value="15000">15 000 FCFA</option></select>
+      <label for="size">Choisir une taille</label>
+      <select id="size"><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select>
+      <label for="qty">Quantité</label>
+      <select id="qty"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <button class="add" onclick="addToCart()">AJOUTER AU PANIER</button>
+      <div class="features">
+        <div class="feature"><b>STYLE SIGNATURE</b><p>Le logo ERICASTHRO au centre de la pièce.</p></div>
+        <div class="feature"><b>COMMANDE SIMPLE</b><p>Un parcours de commande pensé pour mobile.</p></div>
+        <div class="feature"><b>PAIEMENT MOBILE</b><p>Wave et Mobile Money après activation du compte marchand.</p></div>
+      </div>
+    </div>
   </div>
 </section>
-<section class="section contact" id="marque">
-  <div class="eyebrow">Notre ambition</div><h2>Une identité. Un continent.</h2>
-  <p class="sub">ERICASTHRO ambitionne de devenir une grande marque africaine de vêtements et d’accessoires. Merci de faire partie de cette aventure.</p>
-</section>
-<section class="section contact" id="contact">
-  <div class="eyebrow">Nous contacter</div><h2>Parlons de ton style.</h2>
-  <p class="sub">Commandes et renseignements par WhatsApp : <a href="https://wa.me/2250151374759" target="_blank" rel="noopener">+225 01 51 37 47 59</a>.</p>
-  <p class="sub">Les prix sont affichés en FCFA. Les frais et délais de livraison sont confirmés individuellement avant validation définitive.</p>
+<section class="section" id="contact">
+  <div class="eyebrow">La marque</div><h2>ERICASTHRO.</h2>
+  <p class="sub">ERICASTHRO reçoit les demandes de commande depuis les 54 pays d’Afrique. Pour chaque destination, les frais et délais de livraison sont confirmés individuellement sur WhatsApp au +225 01 51 37 47 59.</p>
+  <p class="sub">Les prix sont affichés en FCFA. Les frais de livraison ne sont pas inclus et seront confirmés avant validation définitive.</p>
 </section>
 </main>
 <footer><span>© 2026 ERICASTHRO — TOUS DROITS RÉSERVÉS</span><span>BOUTIQUE OFFICIELLE</span></footer>
 
-<div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+<div class="modal" id="cartModal">
  <div class="panel">
-  <div class="panelhead"><h2 id="cartTitle">Finaliser la commande</h2><button class="close" onclick="closeCart()" aria-label="Fermer">×</button></div>
-  <div id="cartSummary" class="sub">Ton panier est vide.</div>
+  <div class="panelhead"><h2>Finaliser la commande</h2><button class="close" onclick="closeCart()">×</button></div>
+  <div id="cartSummary" class="muted">Ton panier est vide.</div>
   <form id="orderForm" onsubmit="submitOrder(event)">
    <label for="customer">Nom complet</label><input id="customer" required placeholder="Ton nom">
    <label for="country">Pays de livraison</label>
-   <select id="country" required>
-    <option value="">Sélectionner un pays</option>
-    <option>Afrique du Sud</option><option>Algérie</option><option>Angola</option><option>Bénin</option><option>Botswana</option><option>Burkina Faso</option><option>Burundi</option><option>Cabo Verde</option><option>Cameroun</option><option>Comores</option><option>Congo (République du)</option><option>Congo (République démocratique du)</option><option>Côte d’Ivoire</option><option>Djibouti</option><option>Égypte</option><option>Érythrée</option><option>Eswatini</option><option>Éthiopie</option><option>Gabon</option><option>Gambie</option><option>Ghana</option><option>Guinée</option><option>Guinée-Bissau</option><option>Guinée équatoriale</option><option>Kenya</option><option>Lesotho</option><option>Liberia</option><option>Libye</option><option>Madagascar</option><option>Malawi</option><option>Mali</option><option>Maroc</option><option>Maurice</option><option>Mauritanie</option><option>Mozambique</option><option>Namibie</option><option>Niger</option><option>Nigeria</option><option>Ouganda</option><option>République centrafricaine</option><option>Rwanda</option><option>Sao Tomé-et-Principe</option><option>Sénégal</option><option>Seychelles</option><option>Sierra Leone</option><option>Somalie</option><option>Soudan</option><option>Soudan du Sud</option><option>Tanzanie</option><option>Tchad</option><option>Togo</option><option>Tunisie</option><option>Zambie</option><option>Zimbabwe</option>
-   </select>
-   <label for="phone">Téléphone avec indicatif du pays</label><input id="phone" type="tel" required placeholder="Ex. +225 07 00 00 00 00">
+    <select id="country" required>
+<option value="">Sélectionner un pays</option>
+<option value="Afrique du Sud">Afrique du Sud</option>
+<option value="Algérie">Algérie</option>
+<option value="Angola">Angola</option>
+<option value="Bénin">Bénin</option>
+<option value="Botswana">Botswana</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cabo Verde">Cabo Verde</option>
+<option value="Cameroun">Cameroun</option>
+<option value="Comores">Comores</option>
+<option value="Congo (République du)">Congo (République du)</option>
+<option value="Congo (République démocratique du)">Congo (République démocratique du)</option>
+<option value="Côte d’Ivoire">Côte d’Ivoire</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Égypte">Égypte</option>
+<option value="Érythrée">Érythrée</option>
+<option value="Eswatini">Eswatini</option>
+<option value="Éthiopie">Éthiopie</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambie">Gambie</option>
+<option value="Ghana">Ghana</option>
+<option value="Guinée">Guinée</option>
+<option value="Guinée-Bissau">Guinée-Bissau</option>
+<option value="Guinée équatoriale">Guinée équatoriale</option>
+<option value="Kenya">Kenya</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libye">Libye</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Mali">Mali</option>
+<option value="Maroc">Maroc</option>
+<option value="Maurice">Maurice</option>
+<option value="Mauritanie">Mauritanie</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Namibie">Namibie</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Ouganda">Ouganda</option>
+<option value="République centrafricaine">République centrafricaine</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Sao Tomé-et-Principe">Sao Tomé-et-Principe</option>
+<option value="Sénégal">Sénégal</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Somalie">Somalie</option>
+<option value="Soudan">Soudan</option>
+<option value="Soudan du Sud">Soudan du Sud</option>
+<option value="Tanzanie">Tanzanie</option>
+<option value="Tchad">Tchad</option>
+<option value="Togo">Togo</option>
+<option value="Tunisie">Tunisie</option>
+<option value="Zambie">Zambie</option>
+<option value="Zimbabwe">Zimbabwe</option>
+    </select>
+    <label for="phone">Téléphone avec indicatif du pays</label><input id="phone" type="tel" required placeholder="Ex. +221 77 000 00 00">
    <label for="city">Ville / commune</label><input id="city" required placeholder="Ex. Abidjan, Cocody">
    <label for="address">Adresse de livraison</label><input id="address" required placeholder="Quartier, repère...">
    <label>Moyen de paiement souhaité</label>
@@ -112,69 +166,20 @@ input,select{width:100%;background:#111;color:white;border:1px solid #444;paddin
     <label><input type="radio" name="payment" value="MTN MoMo">MTN MoMo</label>
    </div>
    <div class="total"><span>Total produits</span><span id="total">0 FCFA</span></div>
-   <div class="notice">Les articles dont le prix est indiqué « à confirmer » seront chiffrés par notre équipe. Les frais de livraison sont communiqués avant validation. Aucun paiement n’est encaissé automatiquement sur ce site.</div>
-   <button class="submit" type="submit">ENVOYER LA DEMANDE SUR WHATSAPP</button>
+   <div class="notice">Les prix des articles sont affichés en FCFA. Les frais et délais de livraison dépendent du pays et seront confirmés par WhatsApp avant toute validation définitive. Aucun paiement n’est encaissé automatiquement sur ce site.</div>
+   <button class="add" type="submit">ENVOYER LA DEMANDE</button>
   </form>
   <div id="confirmation" class="notice" style="display:none"></div>
  </div>
 </div>
 <script>
-const whatsappNumber="2250151374759";
-const products=[
- {id:"hoodie",name:"Hoodie Signature Blanc",category:"Homme",tag:"Essentials",image:"pull-ericasthro-blanc.png",prices:[10000,15000],description:"Pull à capuche blanc avec logo ERICASTHRO noir."},
- {id:"tee-h",name:"T-shirt Signature Homme",category:"Homme",tag:"Vêtements",image:"images/tshirt-homme.png",prices:null,description:"T-shirt de la collection ERICASTHRO."},
- {id:"tee-f",name:"T-shirt Signature Femme",category:"Femme",tag:"Vêtements",image:"images/tshirt-femme.png",prices:null,description:"T-shirt de la collection ERICASTHRO."},
- {id:"cap",name:"Casquette ERICASTHRO",category:"Accessoires",tag:"Accessoires",image:"images/casquette-ericasthro.png",prices:null,description:"Casquette avec signature de la marque."},
- {id:"pants",name:"Pantalon Signature",category:"Homme",tag:"Vêtements",image:"images/pantalon-homme.png",prices:null,description:"Pantalon de la collection ERICASTHRO."},
- {id:"under-h",name:"Sous-vêtement Homme",category:"Homme",tag:"Essentials",image:"images/sous-vetement-homme.png",prices:null,description:"Essentiel homme ERICASTHRO."},
- {id:"under-f",name:"Sous-vêtement Femme",category:"Femme",tag:"Essentials",image:"images/sous-vetement-femme.png",prices:null,description:"Essentiel femme ERICASTHRO."},
- {id:"backpack",name:"Sac à dos ERICASTHRO",category:"Accessoires",tag:"Maroquinerie",image:"images/sac-a-dos.png",prices:[13000],description:"Sac à dos de la collection ERICASTHRO."},
- {id:"travel",name:"Sac de voyage ERICASTHRO",category:"Accessoires",tag:"Maroquinerie",image:"images/sac-de-voyage.png",prices:[25000],description:"Sac de voyage de la collection ERICASTHRO."},
- {id:"handbag",name:"Sac à main ERICASTHRO",category:"Accessoires",tag:"Maroquinerie",image:"images/sac-a-main.png",prices:[20000],description:"Sac à main de la collection ERICASTHRO."}
-];
-let cart=[];let activeCategory="Tous";
-const money=n=>new Intl.NumberFormat("fr-FR").format(n)+" FCFA";
-function productPrice(p){if(!p.prices)return "Prix à confirmer";if(p.prices.length===2)return money(p.prices[0])+" – "+money(p.prices[1]);return money(p.prices[0]);}
-function renderProducts(){
- const q=document.getElementById("search").value.trim().toLowerCase();
- const visible=products.filter(p=>(activeCategory==="Tous"||p.category===activeCategory)&&(`${p.name} ${p.category} ${p.tag}`).toLowerCase().includes(q));
- document.getElementById("productGrid").innerHTML=visible.map(p=>`
- <article class="card"><div class="visual"><div class="fallback">${p.name.toUpperCase()}</div><img src="${p.image}" alt="${p.name}" onerror="this.style.display='none'"></div>
- <div class="cardbody"><div class="tag">${p.tag} / ${p.category}</div><h3>${p.name}</h3><div class="price">${productPrice(p)}</div>
- <button onclick="addToCart('${p.id}')">${p.prices?"AJOUTER AU PANIER":"DEMANDER LE PRIX"}</button><div class="product-note">${p.description}</div></div></article>`).join("")||'<p class="sub">Aucun article ne correspond à ta recherche.</p>';
-}
-document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-cat]");if(!b)return;activeCategory=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts();});
-document.getElementById("search").addEventListener("input",renderProducts);
-function addToCart(id){
- const p=products.find(x=>x.id===id);if(!p)return;
- let price=p.prices?(p.prices.length===2?p.prices[0]:p.prices[0]):null;
- if(p.id==="hoodie"){const choice=prompt("Choisis le prix du hoodie :\n1 = 10 000 FCFA\n2 = 15 000 FCFA","1");if(choice!=="1"&&choice!=="2")return;price=choice==="2"?15000:10000;}
- const existing=cart.find(x=>x.id===id&&x.price===price);
- if(existing)existing.qty++;else cart.push({id,name:p.name,price,qty:1});
- updateCart();openCart();
-}
-function updateCart(){
- document.getElementById("count").textContent=cart.reduce((s,x)=>s+x.qty,0);
- const summary=document.getElementById("cartSummary");
- summary.innerHTML=cart.length?cart.map((x,i)=>`<div class="cartline"><button type="button" onclick="removeItem(${i})">Retirer</button><b>${x.name}</b><br>Quantité : ${x.qty} · ${x.price===null?"Prix à confirmer":money(x.price*x.qty)}</div>`).join(""):"Ton panier est vide.";
- const uncertain=cart.some(x=>x.price===null);
- const total=cart.reduce((s,x)=>s+(x.price===null?0:x.price*x.qty),0);
- document.getElementById("total").textContent=uncertain?(total?money(total)+" + prix à confirmer":"Prix à confirmer"):money(total);
-}
-function removeItem(i){cart.splice(i,1);updateCart();}
-function openCart(){updateCart();document.getElementById("cartModal").classList.add("open");}
-function closeCart(){document.getElementById("cartModal").classList.remove("open");}
-function submitOrder(e){
- e.preventDefault();if(!cart.length){alert("Ajoute un article au panier.");return;}
- const data={client:document.getElementById("customer").value,phone:document.getElementById("phone").value,country:document.getElementById("country").value,city:document.getElementById("city").value,address:document.getElementById("address").value,payment:new FormData(e.target).get("payment")};
- const items=cart.map(x=>`- ${x.name}, quantité ${x.qty}, ${x.price===null?"prix à confirmer":money(x.price*x.qty)}`).join("\n");
- const total=cart.reduce((s,x)=>s+(x.price===null?0:x.price*x.qty),0);const uncertain=cart.some(x=>x.price===null);
- const message=`Bonjour ERICASTHRO, je souhaite commander :\n${items}\nTotal des articles tarifés : ${money(total)}${uncertain?" (certains prix restent à confirmer)":""}\nNom : ${data.client}\nPays : ${data.country}\nTéléphone : ${data.phone}\nVille : ${data.city}\nAdresse : ${data.address}\nPaiement souhaité : ${data.payment}\nMerci de me confirmer la disponibilité, les prix définitifs et les frais de livraison.`;
- document.getElementById("confirmation").style.display="block";
- document.getElementById("confirmation").textContent="Ta demande est prête. WhatsApp va s’ouvrir pour l’envoyer à ERICASTHRO.";
- window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,"_blank","noopener");
-}
-renderProducts();
+let cart=[]; const whatsappNumber="2250151374759";
+const money=n=>new Intl.NumberFormat('fr-FR').format(n)+' FCFA';
+function addToCart(){const size=document.getElementById('size').value;const qty=Number(document.getElementById('qty').value);const price=Number(document.getElementById('priceChoice').value);const found=cart.find(x=>x.size===size&&x.price===price);if(found)found.qty+=qty;else cart.push({name:'Hoodie Signature Blanc',size,price,qty});renderCart();document.getElementById('count').textContent=cart.reduce((a,x)=>a+x.qty,0);openCart();}
+function renderCart(){const box=document.getElementById('cartSummary');if(!cart.length){box.textContent='Ton panier est vide.';}else{box.innerHTML=cart.map(x=>`<p>${x.name} — taille ${x.size} × ${x.qty} <b>${money(x.qty*x.price)}</b></p>`).join('');}document.getElementById('total').textContent=money(cart.reduce((a,x)=>a+x.qty*x.price,0));}
+function openCart(){renderCart();document.getElementById('cartModal').classList.add('open')}
+function closeCart(){document.getElementById('cartModal').classList.remove('open')}
+function submitOrder(e){e.preventDefault();if(!cart.length){alert('Ajoute un article au panier.');return;}const data={client:document.getElementById('customer').value,telephone:document.getElementById('phone').value,pays:document.getElementById('country').value,ville:document.getElementById('city').value,adresse:document.getElementById('address').value,paiement:new FormData(e.target).get('payment'),articles:cart,total:cart.reduce((a,x)=>a+x.qty*x.price,0)};const items=data.articles.map(x=>`- ${x.name}, taille ${x.size}, quantité ${x.qty}, ${money(x.price*x.qty)}`).join('\\n');const message=`Bonjour ERICASTHRO, je souhaite commander :\\n${items}\\nTotal produits : ${money(data.total)}\\nNom : ${data.client}\\nPays : ${data.pays}\\nTéléphone : ${data.telephone}\\nVille : ${data.ville}\\nAdresse : ${data.adresse}\\nPaiement souhaité : ${data.paiement}`;document.getElementById('confirmation').style.display='block';document.getElementById('confirmation').textContent='Ta demande va être envoyée à ERICASTHRO sur WhatsApp. Aucun paiement n’est encaissé automatiquement.';window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,'_blank');}
 </script>
 </body>
-</html>
+  </html>
