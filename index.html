@@ -1,151 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ERICASTHRO — Boutique officielle.">
+<meta name="description" content="ERICASTHRO — Boutique officielle. Une marque africaine de vêtements et accessoires.">
 <title>ERICASTHRO — Boutique officielle</title>
 
 <style>
+:root {
+  --black:#090909;
+  --gold:#d4af37;
+  --white:#ffffff;
+  --gray:#aaaaaa;
+  --card:#171717;
+}
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body {
-  background: #090909;
-  color: white;
-  font-family: Arial, sans-serif;
+  background:var(--black);
+  color:var(--white);
+  font-family:Arial,sans-serif;
 }
 
 header {
-  padding: 25px 15px;
-  text-align: center;
-  border-bottom: 1px solid #333;
+  background:#000;
+  padding:25px 15px;
+  text-align:center;
+  border-bottom:1px solid var(--gold);
 }
 
-header h1 {
-  letter-spacing: 5px;
-  font-size: 28px;
+.logo {
+  color:var(--gold);
+  font-size:32px;
+  font-weight:bold;
+  letter-spacing:4px;
 }
 
 header p {
-  color: #aaa;
-  margin-top: 8px;
+  color:#ddd;
+  margin-top:8px;
+  font-size:13px;
+  letter-spacing:2px;
 }
 
 .hero {
-  text-align: center;
-  padding: 45px 15px;
+  text-align:center;
+  padding:65px 20px;
+  background:linear-gradient(#0009,#000c),
+  url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400")
+  center/cover;
 }
 
-.hero h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
+.hero h1 {
+  font-size:34px;
+  color:var(--gold);
+  margin-bottom:15px;
 }
 
 .hero p {
-  color: #bbb;
+  max-width:600px;
+  margin:auto;
+  line-height:1.7;
+  color:#eee;
 }
 
-.container {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
+.hero a {
+  display:inline-block;
+  margin-top:25px;
+  background:var(--gold);
+  color:#000;
+  padding:14px 28px;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:4px;
+}
+
+.section-title {
+  text-align:center;
+  color:var(--gold);
+  font-size:26px;
+  margin:40px 10px 25px;
+}
+
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  padding:15px;
+  max-width:1200px;
+  margin:auto;
 }
 
 .product {
-  background: #151515;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 20px;
+  background:var(--card);
+  border:1px solid #333;
+  border-radius:8px;
+  overflow:hidden;
+  padding-bottom:18px;
 }
 
 .product img {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 20px;
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  background:#252525;
 }
 
-.product h2 {
-  margin-bottom: 10px;
+.product h3 {
+  color:var(--gold);
+  margin:15px 12px 8px;
+  font-size:18px;
 }
 
 .price {
-  color: #d5b36a;
-  font-size: 22px;
-  margin: 15px 0;
+  margin:0 12px 14px;
+  font-weight:bold;
+  font-size:17px;
 }
 
-label {
-  display: block;
-  margin: 18px 0 8px;
-  font-weight: bold;
+.product label {
+  display:block;
+  margin:10px 12px 5px;
+  color:#ddd;
+  font-size:13px;
 }
 
-select, input {
-  width: 100%;
-  padding: 13px;
-  background: #222;
-  color: white;
-  border: 1px solid #555;
-  border-radius: 6px;
+.product select,
+.product input {
+  display:block;
+  width:calc(100% - 24px);
+  margin:0 12px;
+  padding:10px;
+  background:#080808;
+  color:white;
+  border:1px solid #555;
+  border-radius:4px;
 }
 
-.colors {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+.order-btn {
+  display:block;
+  width:calc(100% - 24px);
+  margin:16px 12px 0;
+  padding:13px;
+  border:0;
+  border-radius:4px;
+  background:var(--gold);
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-.color-option {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 3px solid #777;
-  cursor: pointer;
+.order-btn:hover {
+  background:#f0d36d;
 }
 
-.color-option.active {
-  outline: 2px solid white;
-  outline-offset: 3px;
+.about {
+  padding:45px 20px;
+  text-align:center;
+  line-height:1.8;
+  background:#111;
+  margin-top:45px;
 }
 
-.yellow { background: yellow; }
-.blue { background: blue; }
-.white { background: white; }
-.black { background: black; }
-.pink { background: pink; }
-
-#colorName {
-  color: #d5b36a;
-  margin-top: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 15px;
-  background: #d5b36a;
-  color: black;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  background: white;
+.about h2 {
+  color:var(--gold);
+  margin-bottom:15px;
 }
 
 footer {
-  text-align: center;
-  padding: 30px 10px;
-  color: #888;
-  margin-top: 30px;
+  padding:25px 15px;
+  text-align:center;
+  color:#aaa;
+  font-size:13px;
+  line-height:1.8;
+}
+
+footer strong {
+  color:var(--gold);
+}
+
+.whatsapp-fixed {
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  padding:14px 18px;
+  border-radius:30px;
+  font-weight:bold;
+  z-index:10;
 }
 </style>
 </head>
@@ -153,124 +203,267 @@ footer {
 <body>
 
 <header>
-  <h1>ERICASTHRO</h1>
-  <p>LE STYLE AFRICAIN • L'ÉLÉGANCE</p>
+  <div class="logo">ERICASTHRO</div>
+  <p>STYLE • ÉLÉGANCE • IDENTITÉ AFRICAINE</p>
 </header>
 
 <section class="hero">
-  <h2>BIENVENUE CHEZ ERICASTHRO</h2>
-  <p>Découvrez notre collection exclusive.</p>
+  <h1>BIENVENUE CHEZ ERICASTHRO</h1>
+  <p>
+    Découvrez une collection qui associe élégance,
+    qualité et identité africaine.
+    Exprimez votre style avec ERICASTHRO.
+  </p>
+  <a href="#collection">DÉCOUVRIR LA COLLECTION</a>
 </section>
 
-<main class="container">
+<h2 class="section-title" id="collection">NOTRE COLLECTION</h2>
 
-  <div class="product">
+<main class="products" id="products"></main>
 
-    <img src="pull-ericasthro-blanc.png"
-         alt="Pull ERICASTHRO">
-
-    <h2>Hoodie Signature ERICASTHRO</h2>
-
-    <p>Un style élégant et moderne pour toutes les occasions.</p>
-
-    <p class="price">10 000 à 15 000 FCFA</p>
-
-    <label>Choisir le prix</label>
-    <select id="price">
-      <option value="10000">10 000 FCFA</option>
-      <option value="15000">15 000 FCFA</option>
-    </select>
-
-    <label>Choisir une couleur</label>
-
-    <div class="colors">
-      <button type="button" class="color-option yellow"
-        aria-label="Jaune" onclick="selectColor('Jaune', this)"></button>
-
-      <button type="button" class="color-option blue"
-        aria-label="Bleu" onclick="selectColor('Bleu', this)"></button>
-
-      <button type="button" class="color-option white active"
-        aria-label="Blanc" onclick="selectColor('Blanc', this)"></button>
-
-      <button type="button" class="color-option black"
-        aria-label="Noir" onclick="selectColor('Noir', this)"></button>
-
-      <button type="button" class="color-option pink"
-        aria-label="Rose" onclick="selectColor('Rose', this)"></button>
-    </div>
-
-    <p id="colorName">Couleur choisie : Blanc</p>
-
-    <label>Choisir la taille</label>
-    <select id="size">
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-      <option>XXL</option>
-    </select>
-
-    <label>Quantité</label>
-    <input type="number" id="quantity"
-      min="1" max="4" value="1">
-
-    <button type="button" onclick="orderProduct()">
-      COMMANDER SUR WHATSAPP
-    </button>
-
-  </div>
-
-</main>
+<section class="about">
+  <h2>À PROPOS D'ERICASTHRO</h2>
+  <p>
+    ERICASTHRO est une marque ambitieuse qui célèbre
+    le style, l'élégance et le potentiel africain.
+    Notre vision : construire une grande marque africaine
+    reconnue à travers le continent.
+  </p>
+</section>
 
 <footer>
-  <p>© 2026 ERICASTHRO — Tous droits réservés.</p>
+  <strong>ERICASTHRO</strong><br>
+  La mode africaine avec élégance.<br>
+  Commandes disponibles par WhatsApp.<br>
+  © 2026 ERICASTHRO — Tous droits réservés.
 </footer>
 
+<a class="whatsapp-fixed"
+   href="https://wa.me/2250151374759"
+   target="_blank">
+  WhatsApp
+</a>
+
 <script>
-let selectedColor = "Blanc";
+const produits = [
 
-function selectColor(color, button) {
-  selectedColor = color;
+  {
+    nom:"T-shirt Homme ERICASTHRO",
+    prix:5000,
+    image:"tshirt-homme.jpg",
+    couleurs:["Blanc","Noir","Jaune","Bleu"],
+    tailles:["S","M","L","XL","XXL"]
+  },
 
-  document.getElementById("colorName").textContent =
-    "Couleur choisie : " + color;
+  {
+    nom:"T-shirt Femme ERICASTHRO",
+    prix:5000,
+    image:"tshirt-femme.jpg",
+    couleurs:["Blanc","Noir","Rose","Jaune"],
+    tailles:["S","M","L","XL"]
+  },
 
-  document.querySelectorAll(".color-option").forEach(function(item) {
-    item.classList.remove("active");
-  });
+  {
+    nom:"Polo ERICASTHRO",
+    prix:8000,
+    image:"polo-ericasthro.jpg",
+    couleurs:["Blanc","Noir","Bleu","Jaune"],
+    tailles:["S","M","L","XL","XXL"]
+  },
 
-  button.classList.add("active");
-}
+  {
+    nom:"Pantalon ERICASTHRO",
+    prix:5000,
+    image:"pantalon-ericasthro.jpg",
+    couleurs:["Noir","Bleu","Gris"],
+    tailles:["S","M","L","XL","XXL"]
+  },
 
-function orderProduct() {
-  const price = document.getElementById("price").value;
-  const size = document.getElementById("size").value;
-  const quantity = document.getElementById("quantity").value;
+  {
+    nom:"Jean ERICASTHRO",
+    prix:8000,
+    image:"jean-ericasthro.jpg",
+    couleurs:["Bleu","Noir"],
+    tailles:["S","M","L","XL","XXL"]
+  },
 
-  if (quantity < 1 || quantity > 4) {
-    alert("Choisissez une quantité entre 1 et 4.");
+  {
+    nom:"Casquette ERICASTHRO",
+    prix:3000,
+    image:"casquette-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Jaune","Bleu"],
+    tailles:["Taille unique"]
+  },
+
+  {
+    nom:"Sac à dos ERICASTHRO",
+    prix:10000,
+    image:"sac-a-dos-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Bleu"],
+    tailles:["Taille unique"]
+  },
+
+  {
+    nom:"Sac de voyage ERICASTHRO",
+    prix:20000,
+    image:"sac-voyage-ericasthro.jpg",
+    couleurs:["Noir","Bleu","Gris"],
+    tailles:["Taille unique"]
+  },
+
+  {
+    nom:"Sac à main ERICASTHRO",
+    prix:12000,
+    image:"sac-main-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Rose"],
+    tailles:["Taille unique"]
+  },
+
+  {
+    nom:"Slip Homme ERICASTHRO",
+    prix:3000,
+    image:"slip-homme-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Gris","Bleu"],
+    tailles:["S","M","L","XL","XXL"]
+  },
+
+  {
+    nom:"Caleçon Homme ERICASTHRO",
+    prix:3000,
+    image:"calecon-homme-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Gris","Bleu"],
+    tailles:["S","M","L","XL","XXL"]
+  },
+
+  {
+    nom:"Culotte Femme ERICASTHRO",
+    prix:3000,
+    image:"culotte-femme-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Rose","Rouge"],
+    tailles:["S","M","L","XL"]
+  },
+
+  {
+    nom:"Débardeur Homme ERICASTHRO",
+    prix:3000,
+    image:"debardeur-homme-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Bleu","Jaune"],
+    tailles:["S","M","L","XL","XXL"]
+  },
+
+  {
+    nom:"Débardeur Femme ERICASTHRO",
+    prix:3000,
+    image:"debardeur-femme-ericasthro.jpg",
+    couleurs:["Noir","Blanc","Rose","Jaune"],
+    tailles:["S","M","L","XL"]
+  }
+
+];
+
+const catalogue = document.getElementById("products");
+
+produits.forEach((produit,index) => {
+
+  const couleurs = produit.couleurs.map(c =>
+    `<option value="${c}">${c}</option>`
+  ).join("");
+
+  const tailles = (produit.tailles || ["Taille unique"]).map(t =>
+    `<option value="${t}">${t}</option>`
+  ).join("");
+
+  catalogue.innerHTML += `
+    <article class="product">
+
+      <img
+        src="${produit.image}"
+        alt="${produit.nom}"
+        onerror="this.style.display='none'"
+      >
+
+      <h3>${produit.nom}</h3>
+
+      <p class="price">
+        ${produit.prix.toLocaleString("fr-FR")} FCFA
+      </p>
+
+      <label for="couleur-${index}">
+        Choisir la couleur
+      </label>
+
+      <select id="couleur-${index}">
+        ${couleurs}
+      </select>
+
+      <label for="taille-${index}">
+        Choisir la taille
+      </label>
+
+      <select id="taille-${index}">
+        ${tailles}
+      </select>
+
+      <label for="quantite-${index}">
+        Quantité
+      </label>
+
+      <input
+        type="number"
+        id="quantite-${index}"
+        value="1"
+        min="1"
+        max="20"
+      >
+
+      <button class="order-btn" onclick="commander(${index})">
+        COMMANDER
+      </button>
+
+    </article>
+  `;
+});
+
+function commander(index) {
+
+  const produit = produits[index];
+
+  const couleur = document.getElementById(
+    "couleur-" + index
+  ).value;
+
+  const taille = document.getElementById(
+    "taille-" + index
+  ).value;
+
+  const quantite = Number(document.getElementById(
+    "quantite-" + index
+  ).value);
+
+  if (!Number.isInteger(quantite) || quantite < 1 || quantite > 20) {
+    alert("Choisissez une quantité entre 1 et 20.");
     return;
   }
 
-  const total = Number(price) * Number(quantity);
+  const total = produit.prix * quantite;
 
   const message =
-    "Bonjour ERICASTHRO, je souhaite commander :\n\n" +
-    "Article : Hoodie Signature ERICASTHRO\n" +
-    "Couleur : " + selectedColor + "\n" +
-    "Taille : " + size + "\n" +
-    "Quantité : " + quantity + "\n" +
-    "Prix unitaire : " + price + " FCFA\n" +
-    "Total : " + total + " FCFA";
+    "Bonjour ERICASTHRO ! Je souhaite commander :\n\n" +
+    "Article : " + produit.nom + "\n" +
+    "Couleur : " + couleur + "\n" +
+    "Taille : " + taille + "\n" +
+    "Quantité : " + quantite + "\n" +
+    "Prix unitaire : " + produit.prix.toLocaleString("fr-FR") + " FCFA\n" +
+    "Total : " + total.toLocaleString("fr-FR") + " FCFA\n\n" +
+    "Merci de me contacter pour finaliser ma commande.";
 
-  const whatsapp =
+  const url =
     "https://wa.me/2250151374759?text=" +
     encodeURIComponent(message);
 
-  window.open(whatsapp, "_blank");
+  window.open(url,"_blank");
 }
 </script>
 
 </body>
-  </html>
+</html>
