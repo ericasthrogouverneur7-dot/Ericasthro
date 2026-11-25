@@ -19,7 +19,7 @@ header p{color:#ddd;margin-top:8px;font-size:13px;letter-spacing:2px}
 .section-title{text-align:center;color:var(--gold);font-size:26px;margin:40px 10px 25px}
 .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;padding:15px;max-width:1200px;margin:auto}
 .product{background:var(--card);border:1px solid #333;border-radius:8px;overflow:hidden;padding-bottom:18px}
-.product img{width:100%;height:240px;object-fit:cover;background:#252525}
+.product img{width:100%;height:240px;object-fit:contain;background:#080808}
 .product h3{color:var(--gold);margin:15px 12px 8px;font-size:18px}
 .price{margin:0 12px 14px;font-weight:bold;font-size:17px}
 .product label{display:block;margin:10px 12px 5px;color:#ddd;font-size:13px}
@@ -53,10 +53,12 @@ const produits = [
 {nom:"Pantalon ERICASTHRO",prix:5000,image:"pantalon-ericasthro.jpg",couleurs:["Noir","Bleu","Gris"],tailles:["S","M","L","XL","XXL"]},
 {nom:"Jean ERICASTHRO",prix:8000,image:"jean-ericasthro.jpg",couleurs:["Bleu","Noir"],tailles:["S","M","L","XL","XXL"]},
 {nom:"Casquette ERICASTHRO",prix:3000,image:"casquette-ericasthro.jpg",couleurs:["Noir","Blanc","Jaune","Bleu"],tailles:["Taille unique"]},
-{nom:"Sac à dos ERICASTHRO",prix:10000,image:"sac-a-dos-ericasthro.jpg",couleurs:["Noir","Blanc","Bleu"]},
-{nom:"Sac de voyage ERICASTHRO",prix:20000,image:"sac-voyage-ericasthro.jpg",couleurs:["Noir","Bleu","Gris"]},
-{nom:"Sac à main ERICASTHRO",prix:12000,image:"sac-main-ericasthro.jpg",couleurs:["Noir","Blanc","Rose"]},
-{nom:"Ensemble sous-vêtements ERICASTHRO",prix:3000,image:"sous-vetements-ericasthro.jpg",couleurs:["Blanc"],tailles:["S","M","L","XL","XXL"]}
+{nom:"Sac à dos ERICASTHRO",prix:10000,image:"sac-a-dos-ericasthro.jpg",couleurs:["Blanc"],tailles:["Taille unique"]},
+{nom:"Sac à main chaîne ERICASTHRO",prix:12000,image:"sac-main-ericasthro.jpg",couleurs:["Blanc"],tailles:["Taille unique"]},
+{nom:"Ensemble sous-vêtements ERICASTHRO",prix:3000,image:"sous-vetements-ericasthro.jpg",couleurs:["Blanc"],tailles:["S","M","L","XL","XXL"]},
+{nom:"Sac de voyage ERICASTHRO",prix:20000,image:"sac-voyage-ericasthro.jpg",couleurs:["Blanc"],tailles:["Taille unique"]},
+{nom:"Sac cabas ERICASTHRO",prix:15000,image:"sac-cabas-ericasthro.jpg",couleurs:["Blanc"],tailles:["Taille unique"]},
+{nom:"Ensemble T-shirt et casquette ERICASTHRO",prix:5000,image:"ensemble-tshirt-casquette-ericasthro.jpg",couleurs:["Blanc"],tailles:["S","M","L","XL","XXL"]}
 ];
 const catalogue=document.getElementById("products");
 produits.forEach((produit,index)=>{
