@@ -246,7 +246,13 @@ footer strong {
 
 <script>
 const produits = [
-
+  {
+    nom:"Hoodie Signature ERICASTHRO",
+    prix:10000,
+    image:"pull-ericasthro-blanc.png",
+    couleurs:["Blanc","Noir","Jaune","Bleu","Rose"],
+    tailles:["S","M","L","XL","XXL"]
+  },
   {
     nom:"T-shirt Homme ERICASTHRO",
     prix:5000,
@@ -254,7 +260,6 @@ const produits = [
     couleurs:["Blanc","Noir","Jaune","Bleu"],
     tailles:["S","M","L","XL","XXL"]
   },
-
   {
     nom:"T-shirt Femme ERICASTHRO",
     prix:5000,
@@ -262,7 +267,6 @@ const produits = [
     couleurs:["Blanc","Noir","Rose","Jaune"],
     tailles:["S","M","L","XL"]
   },
-
   {
     nom:"Polo ERICASTHRO",
     prix:8000,
@@ -270,7 +274,6 @@ const produits = [
     couleurs:["Blanc","Noir","Bleu","Jaune"],
     tailles:["S","M","L","XL","XXL"]
   },
-
   {
     nom:"Pantalon ERICASTHRO",
     prix:5000,
@@ -278,7 +281,6 @@ const produits = [
     couleurs:["Noir","Bleu","Gris"],
     tailles:["S","M","L","XL","XXL"]
   },
-
   {
     nom:"Jean ERICASTHRO",
     prix:8000,
@@ -286,7 +288,6 @@ const produits = [
     couleurs:["Bleu","Noir"],
     tailles:["S","M","L","XL","XXL"]
   },
-
   {
     nom:"Casquette ERICASTHRO",
     prix:3000,
@@ -294,77 +295,29 @@ const produits = [
     couleurs:["Noir","Blanc","Jaune","Bleu"],
     tailles:["Taille unique"]
   },
-
   {
     nom:"Sac à dos ERICASTHRO",
     prix:10000,
     image:"sac-a-dos-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Bleu"],
-    tailles:["Taille unique"]
+    couleurs:["Noir","Blanc","Bleu"]
   },
-
   {
     nom:"Sac de voyage ERICASTHRO",
     prix:20000,
     image:"sac-voyage-ericasthro.jpg",
-    couleurs:["Noir","Bleu","Gris"],
-    tailles:["Taille unique"]
+    couleurs:["Noir","Bleu","Gris"]
   },
-
   {
     nom:"Sac à main ERICASTHRO",
     prix:12000,
     image:"sac-main-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Rose"],
-    tailles:["Taille unique"]
-  },
-
-  {
-    nom:"Slip Homme ERICASTHRO",
-    prix:3000,
-    image:"slip-homme-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Gris","Bleu"],
-    tailles:["S","M","L","XL","XXL"]
-  },
-
-  {
-    nom:"Caleçon Homme ERICASTHRO",
-    prix:3000,
-    image:"calecon-homme-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Gris","Bleu"],
-    tailles:["S","M","L","XL","XXL"]
-  },
-
-  {
-    nom:"Culotte Femme ERICASTHRO",
-    prix:3000,
-    image:"culotte-femme-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Rose","Rouge"],
-    tailles:["S","M","L","XL"]
-  },
-
-  {
-    nom:"Débardeur Homme ERICASTHRO",
-    prix:3000,
-    image:"debardeur-homme-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Bleu","Jaune"],
-    tailles:["S","M","L","XL","XXL"]
-  },
-
-  {
-    nom:"Débardeur Femme ERICASTHRO",
-    prix:3000,
-    image:"debardeur-femme-ericasthro.jpg",
-    couleurs:["Noir","Blanc","Rose","Jaune"],
-    tailles:["S","M","L","XL"]
+    couleurs:["Noir","Blanc","Rose"]
   }
-
 ];
 
 const catalogue = document.getElementById("products");
 
 produits.forEach((produit,index) => {
-
   const couleurs = produit.couleurs.map(c =>
     `<option value="${c}">${c}</option>`
   ).join("");
@@ -375,7 +328,6 @@ produits.forEach((produit,index) => {
 
   catalogue.innerHTML += `
     <article class="product">
-
       <img
         src="${produit.image}"
         alt="${produit.nom}"
@@ -388,26 +340,17 @@ produits.forEach((produit,index) => {
         ${produit.prix.toLocaleString("fr-FR")} FCFA
       </p>
 
-      <label for="couleur-${index}">
-        Choisir la couleur
-      </label>
-
+      <label for="couleur-${index}">Choisir la couleur</label>
       <select id="couleur-${index}">
         ${couleurs}
       </select>
 
-      <label for="taille-${index}">
-        Choisir la taille
-      </label>
-
+      <label for="taille-${index}">Choisir la taille</label>
       <select id="taille-${index}">
         ${tailles}
       </select>
 
-      <label for="quantite-${index}">
-        Quantité
-      </label>
-
+      <label for="quantite-${index}">Quantité</label>
       <input
         type="number"
         id="quantite-${index}"
@@ -419,13 +362,11 @@ produits.forEach((produit,index) => {
       <button class="order-btn" onclick="commander(${index})">
         COMMANDER
       </button>
-
     </article>
   `;
 });
 
 function commander(index) {
-
   const produit = produits[index];
 
   const couleur = document.getElementById(
